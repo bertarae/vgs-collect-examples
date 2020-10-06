@@ -2,12 +2,12 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>VGS Collect Credit Card Example</title>
+  <title> Collect Card Data Safely With VGS Integration </title>
 
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
         integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 
-  <script type="text/javascript" src="https://js.verygoodvault.com/vgs-collect/1/<organization-id>.js"></script>
+  <<script type="text/javascript" src="https://js.verygoodvault.com/vgs-collect/2.0/vgs-collect.js"></script>>
 
   <style>
     body {
@@ -36,7 +36,7 @@
       padding: .375rem .75rem;
       font-size: 1rem;
       line-height: 1.5;
-      color: #495057;
+      color: #575049;
       background-color: #fff;
       background-clip: padding-box;
       border: 1px solid #ced4da;
@@ -123,7 +123,7 @@
 <!--Include script with VGS Collect form initialization-->
 <script>
   // VGS Collect form initialization
-  const form = VGSCollect.create('<vault-id>', function(state) {});
+ const form = VGSCollect.create("tntgvvz8nxx", "sandbox", function(state) {});
 
   // Create VGS Collect field for credit card name
   form.field('#cc-name', {
